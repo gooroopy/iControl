@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block body %}
+<div data-role="page" data-title="iControl" id="events">
+	<div data-role="header" data-theme="b">
+		<h1>iControl</h1>
+	</div>
+	<div data-role="content">
+	<form>
+		<div align="center">
+			<label for="flip-checkbox-1">Switch 1</label>
+		    <input name="flip-checkbox-1" id="flip-checkbox-1" type="checkbox" data-role="flipswitch" data-wrapper-class="custom-label-flipswitch" data-off-text="On" data-on-text="Off">
+			<label for="flip-checkbox-2">Switch 2</label>
+		    <input name="flip-checkbox-2" id="flip-checkbox-2" type="checkbox" data-role="flipswitch" data-wrapper-class="custom-label-flipswitch" data-off-text="On" data-on-text="Off">
+    		<div id="result"></div>
+	    </div>
+	</form>
+	</div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="/static/icontrol.js"></script>
+{% endblock %}
