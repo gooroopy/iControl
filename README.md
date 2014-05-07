@@ -54,6 +54,25 @@ iControl
 
 สำหรับตัวเว็บแอพพลิเคชัน iControl จะติดตั้งที่ `/home/pi/projects/iControl` บน Raspberry PI
 
+การติดตั้งเว็บแอพพลิเคชัน
+------------------
+
+1. `wget https://bootstrap.pypa.io/ez_setup.py`
+2. `sudo python ez_setup.py`
+3. `pip install -r requirements.txt`
+
+การรันเว็บแอพพลิเคชัน
+----------------
+
+* บน Raspberry PI
+
+```
+python icontrol.py
+```
+
+* เปิดเว็บเบราเซอร์ไปยัง URL: http://<IP ของ Raspberry PI>
+
+
 แหล่งข้อมูลอ้างอิง
 ------------
 
